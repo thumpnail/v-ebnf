@@ -10,4 +10,5 @@ Bugs are expected.
 rule := 'literal' (sub_rule | 'a');
 sub_rule := 'repeat' { ',' sub_rule};
 opt := 'var' name [':' typename] '=' value;
+many := sub_rule | opt | rule;
 ```
