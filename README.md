@@ -14,6 +14,7 @@ many := sub_rule | opt | rule;
 ```
 ## usage(in theory)
 ```v
+import ebnf
 filename := 'somefile.ebnf'
 mut context := ebnf.VParseusContext{}
 ebnf_lines << os.read_lines(filename) or { panic("Could not read file...")}
