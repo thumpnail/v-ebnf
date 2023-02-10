@@ -18,6 +18,6 @@ import ebnf
 filename := 'somefile.ebnf'
 mut context := ebnf.VParseusContext{}
 ebnf_lines << os.read_lines(filename) or { panic("Could not read file...")}
-ctx.read_ebnf(ebnf_lines)
-println(ctx.ast.rules) // all the rules
+context.read_ebnf(ebnf_lines)
+println(context.ast.rules) // all the rules
 ```
